@@ -12,7 +12,7 @@ Es demonstriert grundlegende Fähigkeiten in Wahrscheinlichkeitsrechnung, Monte-
 
 ## Installation
 1. Klonen Sie das Repository:
-git clone https://github.com/xiaohanyu-creator/versicherungs-simulation.git
+git clone https://github.com/Zweistein019/versicherungs-simulation.git
 2. Installieren Sie die benötigten Bibliotheken:
 pip install numpy matplotlib seaborn
 

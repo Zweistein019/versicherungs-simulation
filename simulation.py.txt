@@ -1,0 +1,26 @@
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Parameter der Simulation
+anzahl_personen = 1000            # Anzahl der Versicherungsnehmer
+versicherungssumme = 100000       # Versicherungssumme pro Person (€)
+sterbewahrscheinlichkeit = 0.01   # Wahrscheinlichkeit, innerhalb eines Jahres zu sterben
+
+# 1. Simulation, ob jede Person verstirbt (1 = Tod, 0 = Überleben)
+todesereignisse = np.random.binomial(1, sterbewahrscheinlichkeit, anzahl_personen)
+
+# 2. Berechnung der Versicherungszahlungen pro Person
+zahlungen = todesereignisse * versicherungssumme
+
+# 3. Gesamtsumme der Versicherungszahlungen
+gesamte_zahlung = np.sum(zahlungen)
+print(f"Gesamtsumme der Versicherungszahlungen in diesem Jahr: €{gesamte_zahlung}")
+
+# 4. Visualisierung der Verteilung der Zahlungen
+sns.histplot(zahlungen, bins=2, kde=False)
+plt.title("Verteilung der Versicherungszahlungen pro Person")
+plt.xlabel("Versicherungszahlung (€)")
+plt.ylabel("Anzahl der Personen")
+plt.show()

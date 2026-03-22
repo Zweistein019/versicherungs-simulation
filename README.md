@@ -29,11 +29,7 @@ Beispielausgabe:
 Gesamtsumme der Versicherungszahlungen in diesem Jahr: €1,200,000
 Anzahl der Todesfälle: 12
 
-##Visualisierung
+## Visualisierung
 
 Das Skript erstellt ein Histogramm der Versicherungszahlungen pro Person.
 
-Erweiterungsmöglichkeiten
-Mehrjährige Simulation der Versicherungszahlungen
-Altersabhängige Sterbewahrscheinlichkeiten einführen
-Monte-Carlo-Simulation zur Risikobewertung über viele Jahre
